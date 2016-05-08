@@ -12,7 +12,7 @@ layout: default
 <h1>site</h1>
 <ul>
     {% for x in site %}
-        {% if x[0] in [ 'pages', 'html_pages' ] %}
+        {% if [ 'pages', 'html_pages' ] contains x[0] %}
             <li><b>{{ x[0] }}:</b> &lt;suppressed&gt;</li>
         {% else %}
             <li><b>{{ x[0] }}:</b> {{ x[1] }}</li>
