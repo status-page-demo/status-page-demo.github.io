@@ -2,6 +2,14 @@
 layout: default
 ---
 {% include service-list-one.html %}
+<h1>site</h1>
+<ul>
+    {% for x in site %}
+    <li><b>{{ x[0] }}:</b> {{ x[1] }}</li>
+    {% endfor %}
+</ul>
+
+<h1>site.github</h1>
 <ul>
     {% for x in site %}
     <li><b>{{ x[0] }}:</b> {{ x[1] }}</li>
