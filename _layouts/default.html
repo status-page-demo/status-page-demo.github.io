@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="{{ site.description }}" />
+<meta name="author" content="{{ site.author }}" />
+<link rel="author" href="humans.txt" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link href="./statuspage.css" rel="stylesheet" type="text/css" />
+<title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+</head>
+<body>
+<header>
+  <div class="container">
+      <h1 class="logo"><a href="{{ site.baseurl }}">STATUS<span>PAGE</span></a></h1>
+    <section class="social">
+      <a class="btn" href="http://github.com/jasonk/status-page">Github</a>
+    </section>
+  </div>
+</header>
+<main>{{ content }}</main>
+<footer>
+<hr />
+<p>&copy; <time>2016</time> {{ site.author }}</p>
+</footer>
+</body>
+</html>
