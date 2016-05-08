@@ -1,0 +1,5 @@
+name: Status Page Demo
+description: Blah blah blah
+exclude:
+  - README.md
+  - package.json
