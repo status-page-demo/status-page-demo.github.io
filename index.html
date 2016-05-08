@@ -2,6 +2,8 @@
 layout: default
 ---
 {% include service-list-one.html %}
-<xmp>
-{% site | json %}
-</xmp>
+<ul>
+    {% for x in site %}
+    <li><b>{{ x[0] }}:</b> {{ x[1] }}</li>
+    {% endfor %}
+</ul>
