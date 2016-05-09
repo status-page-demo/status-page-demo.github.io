@@ -4,13 +4,31 @@ layout: default
 
 <script type="text/javascript">
 $(function() {
+    var baseurl = "{{ api_url }}/repos/{{ repository_nwo }}";
     $.ajax( {
         type: 'GET',
-        url: "{{ site.github.issues_url }}?callback=loaded_issues",
+        url: "{{ baseurl }}",
         jsonpCallback: 'callback',
         contentType: 'application/json',
         dataType: 'jsonp',
         success: function( data ) { console.log( data ); },
     } );
+
+    var urls = {
+        url: baseurl,
+        collaborators_url: baseurl + '/collaborators',      // {/collaborator}
+        teams_url: baseurl + '/teams',                      //
+        issue_events_url: baseurl + '/issues/events',       // {/number}
+        events_url: baseurl + '/events',                    //
+        assignees_url: baseurl + '/assignees',              // {/user}
+        branches_url: baseurl + '/branches',                // {/branch}
+        contributors_url: baseurl + '/contributors',        //
+        comments_url: baseurl + '/comments',                // {/number}
+        issue_comment_url: baseurl + '/issues/comments',    // {/number}
+        issues_url: baseurl + '/issues',                    // {/number}
+        notifications_url: baseurl + '/notifications',      // {?since,all,participating}
+        labels_url: baseurl + '/labels',                    // {/name}
+    };
+    console.log( urls );
 });
 </script>
