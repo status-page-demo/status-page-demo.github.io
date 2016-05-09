@@ -3,14 +3,7 @@ layout: default
 ---
 
 <script type="text/javascript">
-    function load_issues() {
-        console.log( "{{ site.github.issues_url }}" );
-        $.getJSON( "{{ site.github.issues_url }}?callback=loaded_issues" );
-    };
-    function loaded_issues( data ) {
-        console.log( data );
-    } );
-    $(function() {
-        load_issues();
-    });
+function load_issues() { $.getJSON( "{{ site.github.issues_url }}?callback=loaded_issues" ); };
+function loaded_issues( data ) { console.log( data ); };
+$(function() { load_issues(); });
 </script>
