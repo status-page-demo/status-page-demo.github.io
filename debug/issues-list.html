@@ -3,10 +3,13 @@ layout: default
 ---
 
 <script type="javascript">
-    $(function() {
+    function load_issues() {
         console.log( "{{ site.github.issues_url }}" );
         $.getJSON( "{{ site.github.issues_url }}" ).done( function( data ) {
             console.log( data );
         } );
+    }
+    $(function() {
+        load_issues();
     });
 </script>
