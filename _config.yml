@@ -1,6 +1,2 @@
-name: Status Page Demo
-description: Blah blah blah
-exclude:
-  - README.md
-  - package.json
-repository: status-page-demo/status-page-demo.github.io
+#name: Status Page Demo
+#description: Blah blah blah
