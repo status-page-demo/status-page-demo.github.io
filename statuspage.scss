@@ -1,25 +1,23 @@
 ---
 ---
-// @import "http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
 @import "http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700";
 
 // Variables
-$bg-body: #f9f9f9;
+$bg-body:           #f9f9f9;
 
-$red: #ee4d4d;
-$blue: #2b2e48;
-$primary-color: $red;
-$secondary-color: $blue;
+$red:               #ee4d4d;
+$blue:              #2b2e48;
+$primary-color:     $red;
+$secondary-color:   $blue;
 
 
 // Typography
-$base-font: helvetica, arial, tahoma, verdana;
-$base-font-title: "Raleway", helvetica, arial, tahoma, verdana;
-
-$base-font-color: #726f77;
+$base-font:         helvetica, arial, tahoma, verdana;
+$base-font-title:   "Raleway", helvetica, arial, tahoma, verdana;
+$base-font-color:   #726f77;
 
 // Timeline
-$timeline-color: $primary-color;
+$timeline-color:    $primary-color;
 
 
 // Mixins and Placeholders

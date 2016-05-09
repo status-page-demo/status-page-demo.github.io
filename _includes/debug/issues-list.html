@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<script type="javascript">
+    console.log( "{{ site.github.issues_url }}" );
+    $.getJSON( "{{ site.github.issues_url }}" ).done( function( data ) {
+        console.log( data );
+    } );
+</script>
