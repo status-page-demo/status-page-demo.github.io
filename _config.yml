@@ -1,2 +1,4 @@
 #name: Status Page Demo
 #description: Blah blah blah
+sass:
+  style: compressed
